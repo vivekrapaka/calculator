@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Working on calculator
+        </h2>
+    </div>
+    <table border="2">
+        <tr>
+            <td>
+                <input type="text" placeholder="0" id="screen" Name="screen"> <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="display">
+                <input type="button" value="AC" name="AC" onclick="reset('AC')">
+                <input type="button" value="/" name="/" onclick="update('/')">
+                <input type="button" value="%" name="%" onclick="update('%')">
+                <input type="button" value="/" name="/" onclick="update('/')">
+                <br>
+                <input type="button" value="7" name="7" onclick="update(7)">
+                <input type="button" value="8" name="8" onclick="update(8)">
+                <input type="button" value="9" name="9" onclick="update(9)">
+                <input type="button" value="*" name="x" onclick="update('x')">
+                <br>
+                <input type="button" value="4" name="4" onclick="update(4)">
+                <input type="button" value="5" name="5" onclick="update(5)">
+                <input type="button" value="6" name="6" onclick="update(6)">
+                <input type="button" value="-" name="-" onclick="update('-')">
+                <br>
+                <input type="button" value="1" name="1" onclick="update(1)">
+                <input type="button" value="2" name="2" onclick="update(2)">
+                <input type="button" value="3" name="3" onclick="update(3)">
+                <input type="button" value="+" name="+" onclick="update('+')">
+                <br>
+                <input type="button" value="0" name="0" onclick="update(0)">
+                <input type="button" value="." name="." onclick="update('.')">
+                <input type="button" value="=" name="=" onclick="result('=')">
+            </td>
+        </tr>
+    </table>
+    <script src="/script.js"></script>
+</body>
+</html>
